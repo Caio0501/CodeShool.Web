@@ -1,0 +1,416 @@
+[
+  {
+    "id": 1,
+    "linguagen": "javascript",
+    "descricao": "JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web - toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática, mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc. você pode apostar que o JavaScript provavelmente está envolvido.",
+    "img": "assets/img/JavaScript.svg",
+    "modulos": [
+      {
+        "tituloModulo": "Introdução",
+        "conteudo": [
+          {
+            "index": 1,
+            "titulo": "Variáveis e Constantes",
+            "descricao": [
+              {
+                "paragrafo": "Variáveis são nomes simbólicos para representar valores em sua aplicação. Esses valores podem ser tipos primitivos ou objetos. Variáveis podem ser declaradas através de duas palavras reservadas var e let, as duas formas de declarar possuem diferenças, mas nesse momento seguiremos apenas com a palavra reservada var  e posteriormente vamos entender a diferença da palavra reservada let.",
+                "exemplo": [
+                  {
+                    "titulo": "Exemplo de variáveis:",
+                    "linha": [
+                      {
+                        "descricao": "var aluno = “Kennedy Batista”"
+                      },
+                      {
+                        "descricao": "var idade = 26"
+                      },
+                      {
+                        "descricao": "var temCachorro = true"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "paragrafo": "Uma constante é semelhante a uma variável, representa um valor, porém não pode ter seu valor alterado ou ser declarada novamente durante a execução do código.",
+                "exemplo": [
+                  {
+                    "titulo": "Exemplo de constantes:",
+                    "linha": [
+                      {
+                        "descricao": "const numeroPi = 3.14"
+                      },
+                      {
+                        "descricao": "const escola = “Trybe”"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "index": 2,
+            "titulo": "Tipos primitivos",
+            "descricao": [
+              {
+                "paragrafo": "São tipos de dados básicos que possuem apenas um valor. Primitivos não são objetos e portanto não possuem métodos. Objetos e métodos serão explicados mais à frente.",
+                "exemplo": null
+              },
+              {
+                "paragrafo": "Em Javascript temos os seguintes tipos primitivos:",
+                "exemplo": [
+                  {
+                    "titulo": "strings: É uma sequência de caracteres utilizados para representar textos.",
+                    "linha": [
+                      {
+                        "descricao": "Ex: var nome = “Kennedy Batista”"
+                      },
+                      {
+                        "descricao": "Neste exemplo temos a variável nome que tem como valor uma string contendo os caracteres “Kennedy Batista”."
+                      }
+                    ]
+                  },
+                  {
+                    "titulo": "number: É um tipo de dado que representa números.",
+                    "linha": [
+                      {
+                        "descricao": "Ex: var idade = 26"
+                      },
+                      {
+                        "descricao": "Neste exemplo temos a variável idade que tem como valor um number contendo o número 26."
+                      }
+                    ]
+                  },
+                  {
+                    "titulo": "boolean: é um tipo de dado lógico que pode ter apenas dois valores: true ou false.",
+                    "linha": [
+                      {
+                        "descricao": "Ex: var estaPago = true"
+                      },
+                      {
+                        "descricao": "Neste exemplo temos a variável “estaPago” que tem como valor um boolean verdadeiro (true)."
+                      }
+                    ]
+                  },
+                  {
+                    "titulo": "null: em Javascript representa um valor nulo ou vazio. Pode representar também um objeto inexistente.",
+                    "linha": [
+                      {
+                        "descricao": "Ex: var meuObjeto = null"
+                      },
+                      {
+                        "descricao": "Neste exemplo temos a variável “meuObjeto“, que não possui valor."
+                      }
+                    ]
+                  },
+                  {
+                    "titulo": "undefined: é um tipo de dados especial atribuído automaticamente a variáveis criadas sem valor ou a parâmetros de uma função que não recebeu argumentos.",
+                    "linha": [
+                      {
+                        "descricao": "Ex: var data"
+                      },
+                      {
+                        "descricao": "Neste exemplo temos a variável data, porém não atribuímos nenhum valor a ela, portanto automaticamente seu valor é undefined."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "index": 3,
+            "titulo": "Operadores Aritméticos",
+            "descricao": [
+              {
+                "paragrafo": "Estes operadores compara dois valores e retorna um valor lógico (boolean), sendo eles:",
+                "exemplo": [
+                  {
+                    "titulo": "Maior que (>): Retorna verdadeiro caso o valor da esquerda seja maior que o valor da direita.",
+                    "linha": [
+                      {
+                        "descricao": "Ex: var maior = 5 > 2"
+                      },
+                      {
+                        "descricao": "Aqui a variável maior terá o valor true."
+                      }
+                    ]
+                  },
+                  {
+                    "titulo": "Maior que ou igual (>=): Retorna verdadeiro caso o valor da esquerda seja maior ou igual ao valor da direita.",
+                    "linha": [
+                      {
+                        "descricao": "Ex.: var maiorOuIgual = 10 >= 9"
+                      },
+                      {
+                        "descricao": "maiorOuIgual = 10 >= 10"
+                      },
+                      {
+                        "descricao": "Aqui a variável maiorOuIgual terá o valor true em ambos os casos"
+                      }
+                    ]
+                  },
+                  {
+                    "titulo": "Menor que (<): Retorna verdadeiro caso o valor da esquerda seja menor que o valor da direita.",
+                    "linha": [
+                      {
+                        "descricao": "Ex.: var menor = 3 < 7"
+                      },
+                      {
+                        "descricao": "Aqui a variável menor terá o valor true."
+                      }
+                    ]
+                  },
+                  {
+                    "titulo": "Menor que ou igual (<=): Retorna verdadeiro caso o valor da esquerda seja menor ou igual ao valor da direita.",
+                    "linha": [
+                      {
+                        "descricao": "Ex.: var menorOuIgual = 9 <= 9"
+                      },
+                      {
+                        "descricao": "menorOuIgual = 8 <= 10"
+                      },
+                      {
+                        "descricao": "Aqui a variável menorOuIgual terá o valor true em ambos os casos."
+                      }
+                    ]
+                  },
+                  {
+                    "titulo": "Igualdade (==): Retorna verdadeiro caso os valores sejam iguais.",
+                    "linha": [
+                      {
+                        "descricao": "Ex: var iguais = 5 === 5"
+                      },
+                      {
+                        "descricao": "Aqui o valor da variável iguais é true."
+                      }
+                    ]
+                  },
+                  {
+                    "titulo": "Desigualdade (!=): Retorna verdadeiro caso os valores sejam diferentes.",
+                    "linha": [
+                      {
+                        "descricao": "Ex: var desiguais = 10 !== 4"
+                      },
+                      {
+                        "descricao": "Aqui o valor da variável desiguais é true."
+                      }
+                    ]
+                  },
+                  {
+                    "titulo": "Estritamente Igual (===): Retorna verdadeiro caso os valores e os tipos sejam iguais.",
+                    "linha": [
+                      {
+                        "descricao": "Ex.: var resultado1 = 15 === 15"
+                      },
+                      {
+                        "descricao": "var resultado2 = 15 === “15”"
+                      },
+                      {
+                        "descricao": "Aqui o valor da variável resultado1 é true, porém o valor da variável resultado2 é false, pois mesmo que o valor seja 15, o tipo da variável resultado1 é number e o tipo da variável resultado2 é string."
+                      },
+                      {
+                        "descricao": "O valor da variável resultado2 também é false, pois mesmo que ambos os tipos sejam string, os valores são diferentes."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "index": 4,
+            "titulo": "Operadores Lógicos",
+            "descricao": [
+              {
+                "paragrafo": "São utilizados com valores boolean ou expressões e retornam um valor boolean como resultado da operação, sendo eles:",
+                "exemplo": [
+                  {
+                    "titulo": "&& , || , !",
+                    "linha": [
+                      {
+                        "descricao": "&&: operador (And) ultilizado para validar se 2 ou mais condições são verdadeiras"
+                      },
+                      {
+                        "descricao": "||: operador (Ou) ultilizado para validar se entre 2 ou mais condições são verdadeiras"
+                      },
+                      {
+                        "descricao": "!: operador (Not) ultilizado para validar se uma condição não e verdadeira"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tituloModulo": "Métodos",
+        "conteudo": [
+          {
+            "index": 1,
+            "titulo": "O que são caixas de diálogo e quais são os 3 tipos?",
+            "descricao": [
+              {
+                "paragrafo": "Basicamente, as caixas de diálogo são janelas modais que são exibidas no navegador com o objetivo de interagir com a pessoa usuária da página. Por meio delas é possível exibir alertas, fazer perguntas e obter respostas. Como cada uma tem a função diferente da outra, a sintaxe e a forma de utilização do recurso também mudam. Confira, a seguir, como os tipos de alert JavaScript funcionam.",
+                "exemplo": [
+                  {
+                    "titulo": "Alert()",
+                    "linha": null
+                  },
+                  {
+                    "titulo": "Confirm()",
+                    "linha": null
+                  },
+                  {
+                    "titulo": "Prompt()",
+                    "linha": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "index": 2,
+            "titulo": "Alert()",
+            "descricao": [
+              {
+                "paragrafo": "O método alert() é um dos tipos de caixas de diálogo disponíveis no navegador. Sua função é exibir o parâmetro mensagem, que pode ser fornecido como uma variável ou ter um valor constante definido no código. Existem outras duas maneiras possíveis de se comunicar com o usuário e falaremos sobre elas mais adiante",
+                "exemplo": [
+                  {
+                    "titulo": "Confira a sintaxe a seguir",
+                    "linha": [
+                      {
+                        "descricao": "window.alert(“mensagem”); "
+                      }
+                    ]
+                  },
+                  {
+                    "titulo": null,
+                    "linha": [
+                      {
+                        "descricao": "É importante dizer que a declaração window antes do alert() é opcional, pois o objeto window tem escopo global. Portanto, é possível escrever o comando simplesmente dessa forma"
+                      }
+                    ]
+                  },
+                  {
+                    "titulo": "Exemplo",
+                    "linha": [
+                      {
+                        "descricao": "alert(“mensagem”);"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "index": 3,
+            "titulo": "Confirm()",
+            "descricao": [
+              {
+                "paragrafo": "Outro tipo de caixa de diálogo é o método confirm(). Seu objetivo é permitir que a pessoa usuária da página decida se deseja ou não executar uma ação determinada. Para isso, exibe uma janela modal com uma mensagem e dois botões: um de confirmação e outro que cancela a ação.",
+                "exemplo": [
+                  {
+                    "titulo": "Confira a sintaxe a seguir",
+                    "linha": [
+                      {
+                        "descricao": "confirm(“mensagem”);"
+                      }
+                    ]
+                  },
+                  {
+                    "titulo": null,
+                    "linha": [
+                      {
+                        "descricao": "É importante dizer que não é possível alterar o texto usado nos botões da janela modal do método confirm(), que correspondem a OK e Cancelar."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "index": 4,
+            "titulo": "Prompt()",
+            "descricao": [
+              {
+                "paragrafo": "O próximo tipo de caixa de diálogo é o método prompt(). Seu objetivo é obter alguma informação da pessoa usuária da página.",
+                "exemplo": [
+                  {
+                    "titulo": "Confira a sintaxe a seguir",
+                    "linha": [
+                      {
+                        "descricao": "window.prompt(“argumento1”, [“argumento2”]);"
+                      },
+                      {
+                        "descricao": "argumento1: a mensagem destinada à pessoa usuária, que corresponde à solicitação feita."
+                      },
+                      {
+                        "descricao": "argumento2: texto opcional que serve como um exemplo do que deve ser preenchido no prompt."
+                      }
+                    ]
+                  },
+                  {
+                    "titulo": null,
+                    "linha": [
+                      {
+                        "descricao": "Além dos argumentos, o método prompt() também exibe dois botões: OK e Cancelar. O OK indica que a pessoa preencheu o campo, enquanto o cancelar significa que ela deseja cancelar a operação."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "linguagen": "HTML 5",
+    "descricao": "HTML5 é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet, originalmente proposto por Opera Software. É a quinta versão da linguagem HTML",
+    "img": "assets/img/HTML.svg",
+    "modulos": null
+  },
+  {
+    "id": 3,
+    "linguagen": "CSS 3",
+    "descricao": "CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site. ... Utilizando o CSS é possível alterar a cor do texto e do fundo, fonte e espaçamento entre parágrafos.",
+    "img": "assets/img/CSS.svg",
+    "modulos": null
+  },
+  {
+    "id": 4,
+    "linguagen": "React Js",
+    "descricao": "O React é uma biblioteca javascript para criação de interfaces de usuário que facilita a construção de aplicações web. Ele segue o conceito de componentes, que permite a separação do código em várias partes que podem ser reutilizadas.",
+    "img": "assets/img/React.svg",
+    "modulos": null
+  },
+  {
+    "id": 5,
+    "linguagen": "Angular",
+    "descricao": "Angular é um framework javascript completo para construção de aplicações web, facilitando a criação de aplicações no formato single-page.",
+    "img": "assets/img/Angular.svg",
+    "modulos": null
+  },
+  {
+    "id": 6,
+    "linguagen": "Vue JS",
+    "descricao": "Vue (pronuncia-se / vjuː /, como view ) é uma estrutura progressiva para construir interfaces de usuário. Ao contrário de outras estruturas monolíticas, o Vue foi projetado desde o início para ser adotado de forma incremental. A biblioteca central concentra-se apenas na camada de visualização e é fácil de selecionar e integrar com outras bibliotecas ou projetos existentes. Por outro lado, o Vue também é perfeitamente capaz de fornecer aplicativos sofisticados de página única quando usado em combinação com ferramentas modernas e bibliotecas de suporte .",
+    "img": "assets/img/Vue.svg",
+    "modulos": null
+  },
+  {
+    "id": 7,
+    "linguagen": "Typescript",
+    "descricao": "O typescript é uma extensão do javascript que adiciona tipagem estática a ele, permitindo que o programador encontre e corrija erros mais facilmente. Um compilador transpila o código escrito em typescript para javascript, para que seja executado nos interpretadores e navegadores web.",
+    "img": "assets/img/Typescript.svg",
+    "modulos": null
+  }
+]

@@ -1,0 +1,262 @@
+main {
+  margin: auto;
+  min-height: calc(100vh - 120px);
+}
+
+.flex-conteiner {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: auto;
+  width: auto;
+  gap: 10px;
+  padding: 40px;
+}
+
+.flex-iten {}
+
+.cardConteiner {
+  margin: 10px;
+  width: 45%;
+  height: 100%;
+}
+
+.tabConteiner {
+  width: 35%;
+  height: 100%;
+}
+
+.conteiner {
+  width: auto;
+  min-width: 400px;
+  height: 400px;
+  background-color: #282A36;
+  padding: 20px 15px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 20px;
+}
+
+.card {
+  min-width: 200px;
+  min-height: 200px;
+  background-color: #282A36;
+  padding: 20px 15px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+}
+
+.card .imgBx {
+  position: relative;
+  height: 130px;
+}
+
+img {
+  margin: 0px 15px;
+  max-width: 100%;
+  border-radius: 4px;
+  transform: scale(1.0);
+  transition: transform 1s;
+}
+
+.card .imgBx img:hover {
+  transform: scale(1.1);
+  transition: transform 1s;
+}
+
+.table {
+  display: block;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: rgba(26, 27, 34, 1);
+  border-radius: 5px;
+}
+
+.table tbody {
+  height: 240px;
+  display: inline-block;
+  width: 100%;
+  overflow: auto;
+}
+
+.table tr {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: auto;
+  border-bottom: 1px solid #282A36;
+}
+
+.table td {
+  width: 50%;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.alineEnd {
+  text-align: end;
+}
+
+.tableCard {
+  display: block;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.tableCard tbody {
+  height: 300px;
+  display: inline-block;
+  width: 100%;
+  overflow: auto;
+}
+
+.tableCard tr {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #282A36;
+  border-radius: 5px;
+  background-color: rgba(26, 27, 34, 1);
+  margin-bottom: 10px;
+}
+
+.tableCard td {
+  width: 40%;
+  padding: 10px 10px;
+  color: #fff;
+}
+
+.tableCard img {
+  align-self: center;
+  margin-left: 2%;
+}
+
+.tableCard h1 {
+  margin: 20px 0px;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+progress {
+  border-radius: 5px;
+  width: 180%;
+  min-width: 200px;
+  height: 22px;
+  box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2);
+}
+
+progress::-webkit-progress-bar {
+  background-color: #8a41ff52;
+  border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #8941FF;
+  border-radius: 5px;
+}
+
+progress::-moz-progress-bar {
+  /* style rules */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(26, 27, 34, 1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f212b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1f212b;
+}
+
+.form {
+  margin: 10px 20px;
+}
+
+.form input {
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid rgba(26, 27, 34, 1);
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgba(26, 27, 34, 1);
+  color: #fff;
+  font-size: 16px;
+}
+
+.searchInput input {
+  padding-left: 60px;
+}
+
+.form input::placeholder {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.form .fa-search {
+  position: absolute;
+  font-size: 20px;
+  padding: 15px 20px;
+  color: #fff;
+}
+
+.tipoTabela {
+  margin: 5px;
+  display: flex;
+}
+
+.btnTabela {
+  width: 50%;
+  margin: 1px;
+  height: 40px;
+  background-color: rgba(26, 27, 34, 1);
+  font: bold;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.btnTabela:hover {
+  background: #0000006c;
+  transition: background 1s;
+}
+
+.btnTabela:active {
+  background: #8a41ff42;
+  transition: background 0s;
+  border: 2px solid rgba(26, 27, 34, 1);
+}
+
+.btnTabela i {
+  padding: 0px 10px 0px 0px;
+}
+
+.header i, .header h1 {
+  padding: 5px;
+  font-size: 28px;
+}
+

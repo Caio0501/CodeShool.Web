@@ -1,0 +1,39 @@
+<main>
+  <section class="flex-conteiner">
+    <section class="flex-iten info">
+      <h1 class="title"><img src="assets/img/AprenderLogo.svg" alt="Logo" width="35" height="auto"> Code School</h1>
+      <p>Faça seu login na plataforma</p>
+    </section>
+    <section class="flex-iten conteiner">
+      <form>
+        <div class="form emailInput">
+          <i class="fas fa-envelope"></i>
+          <input type="text" placeholder="E-mail">
+        </div>
+        <div class="form senhaInput">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Senha">
+          <i class="far fa-eye"></i>
+          <a (click)="createCont()">
+            <p>Esqueci minha Senha</p>
+          </a>
+        </div>
+        <div class="btnGrid">
+          <app-primary-btn label="Entrar" (click)="cadastrar()"></app-primary-btn>
+        </div>
+
+        <div class="btnGrid">
+          <app-secondary-btn label="Criar Conta" (click)="createCont()"></app-secondary-btn>
+        </div>
+
+        <div class="btnGridSocial">
+          <button mat-stroked-button class="btnSocialLog"><i class="fab fa-google"></i>GOOGLE</button>
+          <button mat-stroked-button class="btnSocialLog"><i class="fab fa-github"></i>GITHUB</button>
+        </div>
+
+      </form>
+    </section>
+  </section>
+</main>
+
+<app-footer></app-footer>

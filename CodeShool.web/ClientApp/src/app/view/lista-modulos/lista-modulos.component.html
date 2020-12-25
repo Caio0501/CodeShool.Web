@@ -1,0 +1,35 @@
+<app-nav-bar></app-nav-bar>
+
+<main>
+ <div class="btnConteiner">
+  <button class="btnVoltar" (click)="back()"><i class="fas fa-arrow-left"></i>Voltar</button>
+</div>
+  <section class="flex-conteiner">
+    <section class="flex-iten conteiner">
+
+      <section class="flex-conteiner">
+        <section class="flex-iten imgConteiner">
+          <div class="imgBx">
+            <img [src]="dataSource?.img" [alt]="dataSource?.descricao" height="110px" width="auto">
+          </div>
+        </section>
+
+        <section class="flex-iten infoConteiner">
+          <div class="info">
+            <h2>{{dataSource?.linguagen}}</h2>
+
+            <p>{{dataSource?.descricao}}</p>
+          </div>
+        </section>
+
+      </section>
+      <section class="flex-iten modulos">
+        <app-accordion *ngFor="let item of dataSource?.modulos">
+          <app-accordion-item [title]="item?.tituloModulo" [data]="item?.conteudo" [backValue]="dataSource">
+          </app-accordion-item>
+        </app-accordion>
+      </section>
+    </section>
+
+  </section>
+</main>

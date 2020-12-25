@@ -1,0 +1,27 @@
+<app-nav-bar></app-nav-bar>
+
+<main>
+  <div class="btnConteiner">
+    <button class="btnVoltar" (click)="back()"><i class="fas fa-arrow-left"></i>Voltar</button>
+  </div>
+  <section class="flex-conteiner">
+    <section class="flex-iten conteiner">
+
+      <form [formGroup]="formModel">
+        <div class="form">
+          <h1 style="margin: 10px">Titulo:</h1>
+          <input type="text" formControlName="titulo">
+        </div>
+        <div class="form">
+          <h1 style="margin: 10px">Objetivo:</h1>
+          <textarea type="text" formControlName="descricao"></textarea>
+        </div>
+      </form>
+      
+      <div class="form">
+        <button class="btnSalvar" [disabled]="!formModel.valid" (click)="salvar()"><i
+            class="fas fa-save"></i>Salvar</button>
+      </div>
+    </section>
+  </section>
+</main>

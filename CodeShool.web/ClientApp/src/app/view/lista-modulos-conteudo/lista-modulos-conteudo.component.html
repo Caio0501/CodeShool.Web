@@ -1,0 +1,32 @@
+<app-nav-bar></app-nav-bar>
+
+<main>
+  <div class="btnConteiner">
+   <button class="btnVoltar" (click)="back()"><i class="fas fa-arrow-left"></i>Voltar</button>
+ </div>
+  <section class="flex-conteiner">
+    <div class="flex-iten conteiner">
+      <section class="flex-iten titulo">
+        <h2>{{dataSource?.titulo}} </h2>
+      </section>
+      <section class="flex-iten" *ngFor="let item of dataSource?.descricao">
+        <p>{{item?.paragrafo}}</p>
+
+        <div *ngFor="let ex of item.exemplo" class="exemploConteiner">
+          <b>{{ex.titulo}}</b>
+
+          <div *ngFor="let li of ex.linha">
+            <p>{{li.descricao}}</p>
+          </div>
+
+        </div>
+      </section>
+      <div class="btnGrid">
+        <button (click)="nextIndex()" class="btnProximo">Próximo <i class="fas fa-arrow-right"></i></button>
+        <button (click)="previousIndex()" class="btnAnterior">
+          <i class="fas fa-arrow-left"></i>
+          Anterior</button>
+      </div>
+    </div>
+  </section>
+</main>

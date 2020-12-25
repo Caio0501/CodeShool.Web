@@ -1,0 +1,147 @@
+main {
+  margin: auto;
+  min-height: calc(100vh - 120px);
+}
+
+.flex-conteiner {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  gap: 10px;
+  padding: 40px;
+}
+
+.conteiner {
+  width: 70%;
+  min-width: 800px;
+  height: auto;
+  background-color: #282A36;
+  padding: 20px 15px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 20px;
+}
+
+.titulo {
+  margin-bottom: 50px
+}
+
+.exemploConteiner {
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+  background-color: rgba(26, 27, 34, 1);
+}
+
+b, p {
+  margin: 5px;
+}
+
+.btnVoltar {
+  width: 200px;
+  padding: 10px;
+  height: 50px;
+  background: rgba(22, 23, 29, 0.281);
+  font: bold;
+  font-size: 22px;
+  color: rgba(189, 147, 249, 1);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  float:left;
+}
+
+.btnVoltar:hover {
+  background: #0000006c;
+  transition: background 1s;
+}
+
+.btnVoltar:active {
+  background: #8a41ff42;
+  transition: background 0s;
+  border: 2px solid rgba(26, 27, 34, 1);
+}
+
+.btnVoltar i {
+  padding: 0px 10px 0px 0px;
+}
+
+.btnProximo{
+  width: 200px;
+  padding: 10px;
+  height: 50px;
+  background: rgba(22, 23, 29, 0.281);
+  font: bold;
+  font-size: 22px;
+  color: rgba(189, 147, 249, 1);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  float: right;
+}
+
+.btnProximo:hover {
+  background: #0000006c;
+  transition: background 1s;
+}
+
+.btnProximo:active {
+  background: #8a41ff42;
+  transition: background 0s;
+  border: 2px solid rgba(26, 27, 34, 1);
+}
+
+.btnProximo i {
+  padding: 0px 0px 0px 10px;
+}
+
+.btnAnterior{
+  width: 200px;
+  padding: 10px;
+  height: 50px;
+  background: rgba(22, 23, 29, 0.281);
+  font: bold;
+  font-size: 22px;
+  color: rgba(189, 147, 249, 1);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  float: left;
+}
+
+.btnAnterior:hover {
+  background: #0000006c;
+  transition: background 1s;
+}
+
+.btnAnterior:active {
+  background: #8a41ff42;
+  transition: background 0s;
+  border: 2px solid rgba(26, 27, 34, 1);
+}
+
+.btnAnterior i {
+  padding: 0px 10px 0px 0px;
+}
+
+.btnConteiner{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: 10px;
+  width: auto;
+  gap: 10px;
+  padding: 10px;
+}

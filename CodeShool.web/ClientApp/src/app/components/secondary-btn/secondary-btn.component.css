@@ -1,0 +1,24 @@
+.btnSecondary {
+  width: 100%;
+  height: 50px;
+  color: #8941FF;
+  border-radius: 5px;
+  border-color: #8941FF !important;
+  font: bold;
+  font-size: 28px;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.btnSecondary:hover{
+  background: #8a41ff25 ;
+  transition:  background 1s;
+}
+
+.btnSecondary:active{
+  background: #8a41ff42 ;
+  transition: background 0s;
+  border: 2px solid rgba(26, 27, 34, 1);
+}

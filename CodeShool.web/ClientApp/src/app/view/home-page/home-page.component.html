@@ -1,0 +1,67 @@
+<app-nav-bar></app-nav-bar>
+
+<main>
+  <section class="flex-conteiner">
+    <section class="flex-iten cardConteiner">
+
+      <div class="flex-conteiner">
+        <section class="flex-iten card" *ngFor="let item of dataSource" (click)="abrirMateria(item)">
+          <div class="imgBx">
+            <img [src]="item.img" [alt]="item.linguagen" height="110px" width="auto">
+          </div>
+          <div class="info">
+            <h2>{{item.linguagen}}</h2>
+          </div>
+        </section>
+      </div>
+
+    </section>
+    <section class="flex-iten tabConteiner">
+      <section class="conteiner">
+
+        <div class="tipoTabela">
+          <button mat-stroked-button class="btnTabela">Menbros</button>
+          <button mat-stroked-button class="btnTabela">Seguindo</button>
+        </div>
+
+        <div class="form searchInput">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Pesquisar...">
+        </div>
+
+        <table class="table">
+          <tbody>
+            <tr *ngFor="let row of UserList">
+              <td>{{row.nome}}</td>
+              <td class="alineEnd">{{row.xp}} XP</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+      <section class="conteiner">
+        <div class="header">
+          <h1><i class="fas fa-chart-line"></i> Progresso</h1>
+        </div>
+
+        <table class="tableCard">
+          <tbody>
+            <tr *ngFor="let row of dataProgresso">
+              <td>
+                <img [src]="row.imgURL" [alt]="row.linguagen" height="110px" width="auto">
+              </td>
+              <td>
+                <h1>{{row.linguagen}}</h1>
+                <progress [value]="row.progresso" max="100"></progress>
+              </td>
+              <td class="alineEnd">
+                <h1>{{row.progresso}} %</h1>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+    </section>
+  </section>
+</main>

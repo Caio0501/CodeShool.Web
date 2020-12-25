@@ -1,0 +1,65 @@
+<app-nav-bar></app-nav-bar>
+
+<main>
+  <section class="flex-conteiner">
+
+    <section class="flex-iten conteiner1">
+      <div class="col-8">
+        <button class="btnParticipar" (click)="aceitarDesafio()">Participar</button>
+        <div class="header">
+          <h1><i class="fas fa-users"></i>{{dataSource?.titulo}}</h1>
+          <div>
+            <p>{{dataSource?.nomeCriador}} - {{dataSource?.dataCriacao | date:'dd/MM/yyyy'}}</p>
+          </div>
+        </div>
+        <section class="form">
+          <textarea type="text" readonly [(ngModel)]="dataSource.descricao" rows="5" cols="33"></textarea>
+        </section>
+      </div>
+    </section>
+
+    <section class="flex-iten conteiner2">
+      <section class="col-4-1">
+        <div class="header">
+          <h1>Entregar</h1>
+        </div>
+
+        <form [formGroup]="formModel">
+          <div class="form">
+            <h1 style="margin: 10px">Url Projeto:</h1>
+            <input type="text" formControlName="url">
+          </div>
+        </form>
+
+        <div class="form">
+          <button class="btnSalvar" [disabled]="!formModel.valid" (click)="entregar()">
+            <i class="fas fa-share-square"></i>
+            Enviar
+          </button>
+        </div>
+
+      </section>
+
+      <section class="col-4">
+        <div class="header">
+          <h1><i class="fas fa-list"></i> Desafios Entreges</h1>
+        </div>
+
+        <table class="tableCard">
+          <tbody>
+            <tr *ngFor="let row of dataSourceEntreges">
+              <td>
+                <h1>{{row.nomeCriador}} - {{row.dataCriacao | date:'dd/MM/yyyy'}}</h1>
+              </td>
+              <td style="width: 100px;">
+                <button class="btnAbrir2" (click)="abrirProjeto(row)"><i class="fas fa-external-link-alt"></i></button>
+              </td>
+            </tr>
+          </tbody> 
+        </table>
+
+      </section>
+    </section>
+
+  </section>
+</main>

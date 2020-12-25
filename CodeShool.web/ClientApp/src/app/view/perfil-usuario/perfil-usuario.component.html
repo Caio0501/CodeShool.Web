@@ -1,0 +1,61 @@
+<app-nav-bar></app-nav-bar>
+
+<main>
+  <section class="flex-conteiner userImgBack">
+
+    <section class="flex-iten perfilConteiner">
+      <div class="col-3">
+        <div class="userIMG">
+          <a>
+            <img src="assets/img/user-circle.svg" alt="Usuario" height="280px" width="auto" />
+            <h1>Caio Eduardo</h1>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex-iten infoConteiner">
+      <div class="col-9">
+
+        <div class="header">
+          <h1>Sobre Mim</h1>
+        </div>
+        <div class="bodyInfo">
+          <p></p>
+        </div>
+      </div>
+
+      <div class="col-9">
+        <div class="header">
+          <h1>Tecnologia em andamento</h1>
+        </div>
+
+        <section class="flex-iten cardConteiner">
+
+          <div class="flex-conteiner card">
+            <section class="flex-iten conteinerLinguagen" *ngFor="let item of dataSource">
+              <div class="imgBx">
+                <img [src]="item.imgURL" [alt]="item.linguagen" height="110px" width="auto">
+              </div>
+              <div class="info">
+                <h2>{{item.linguagen}}</h2>
+              </div>
+            </section>
+          </div>
+
+        </section>
+      </div>
+
+      <!-- <div class="col-9">
+        <div class="header">
+          <h1>Historico Github</h1>
+        </div>
+
+         <div class="bodyInfo">
+          <p></p>
+        </div> 
+      </div> -->
+    </section>
+
+  </section>
+</main>

@@ -1,0 +1,48 @@
+<main>
+  <section class="flex-conteiner">
+    <section class="flex-iten info">
+      <h1 class="title"><img src="assets/img/AprenderLogo.svg" alt="Logo" width="35" height="auto"> Code School</h1>
+      <p class="description">Venha se tornar Um Dev e acelerena direção de seus objetivos </p>
+      <a (click)="loginScreen()">
+        <p><i class="fas fa-arrow-left"></i>Voltar para login</p>
+      </a>
+    </section>
+    <section class="flex-iten conteiner">
+      <form [formGroup]="formModel">
+        <div class="form nInput">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Nome" formControlName="name">
+        </div>
+
+        <div class="form nInput">
+          <i class="fas fa-envelope"></i>
+          <input type="text" placeholder="E-mail" formControlName="email">
+        </div>
+
+        <div class="form senhaInput">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Senha" formControlName="password">
+          <i class="far fa-eye"></i>
+        </div>
+
+        <!-- <div class="form senhaInput">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Confirmar sua Senha" formControlName="Password">
+          <i class="far fa-eye"></i>
+        </div> -->
+
+        <div class="btnGrid">
+          <app-primary-btn label="Cadastrar" (click)="cadastrar()"></app-primary-btn>
+        </div>
+
+        <div class="btnGridSocial">
+          <button mat-stroked-button class="btnSocialLog"><i class="fab fa-google"></i>GOOGLE</button>
+          <button mat-stroked-button class="btnSocialLog"><i class="fab fa-github"></i>GITHUB</button>
+        </div>
+
+      </form>
+    </section>
+  </section>
+</main>
+
+<app-footer></app-footer>

@@ -1,0 +1,15 @@
+<section *ngIf="data">
+  <div class="acc-header" (click)="toggle()">
+    <div class="headerTitle">
+      {{title}}
+    </div>
+    <div [@rotatedState]="!showBody? 'default': 'rotated'" class="arrow"><i class="ion-ios-arrow-down"></i></div>
+  </div>
+  <div [@smoothCollapse]="!showBody? 'initial': 'final'">
+    <div class="acc-body" *ngFor="let item of data">
+      <div class="subTitle" (click)="openConteudo(item, data)">
+        {{item.titulo}}
+      </div>
+    </div>
+  </div>
+</section>

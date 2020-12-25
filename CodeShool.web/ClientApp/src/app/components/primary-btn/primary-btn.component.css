@@ -1,0 +1,24 @@
+.btnPrimary {
+  width: 100%;
+  height: 50px;
+  background: #8941FF;
+  font: bold;
+  font-size: 28px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.btnPrimary:hover {
+  background: #8a41ff9f;
+  transition: background 1s;
+}
+
+.btnPrimary:active {
+  background: #b486fdc2;
+  transition: background 0s;
+  border: 2px solid rgba(26, 27, 34, 1);
+}
