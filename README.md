@@ -4,7 +4,7 @@
   <p align="center"> 
     <strong>
       <p>Projeto desenvolvido para o curso de desenvolvimento de sistemas do SENAI-ES.</p>
-      <p>O intuito é construir uma plataforma que gamifique é facilite o aprendisado de pessoas que estão iniciando na programação, entregando uma plataforma online que contem material de estudo e uma IDE<a href="https://stackblitz.com/"> StackBlitz</a> que torna possível dar os primeiros passos sem ter que configurar unm anbiemte de desenvolvimento</p>
+      <p>O intuito é construir uma plataforma que gamifique é facilite o aprendisado de pessoas que estão iniciando na programação, entregando uma plataforma online que contem material de estudo e uma IDE<a href="https://stackblitz.com/"> StackBlitz</a> que torna possível dar os primeiros passos sem ter que configurar um anbiemte de desenvolvimento</p>
     </strong> 
   </p>
   <p align="center"> 
