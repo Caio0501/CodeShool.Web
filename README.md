@@ -1,9 +1,8 @@
-﻿</header>
+</header>
   <div align="center"><img src="./.assets/AprenderLogo.svg" alt="logo" style=" width="120" height="120"/></div>
-  <h1 align="center">CodeShool</h1>
+  <h1 align="center">Code Shool</h1>
   <p align="center"> 
     <strong>
-      <p>Projeto desenvolvido para o curso de desenvolvimento de sistemas do SENAI-ES.</p>
       <p>O intuito é construir uma plataforma que gamifique é facilite o aprendisado de pessoas que estão iniciando na programação, entregando uma plataforma online que contem material de estudo e uma IDE<a href="https://stackblitz.com/"> StackBlitz</a> que torna possível dar os primeiros passos sem ter que configurar um anbiemte de desenvolvimento</p>
     </strong> 
   </p>
