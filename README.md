@@ -8,9 +8,9 @@
   </p>
   <p align="center"> 
   <a href="#status">Status do projeto</a> •
-    <a href="#preview">Preview</a> •
-    <a href="#instalacao">Instalação</a> •
-    <a href="#tecnologias">Tecnologias</a> •
+  <a href="#preview">Preview</a> •
+  <a href="#instalacao">Instalação</a> •
+  <a href="#tecnologias">Tecnologias</a>
   </p>
   <hr/>
 </header>
